@@ -1,14 +1,14 @@
 ---
 title: "User experience in a multi-geo environment"
-ms.reviewer:
+ms.reviewer: jugiammo
 ms.date: 02/14/2025
-ms.author: kvice
-author: kelleyvice-msft
-manager: scotv
+ms.author: v-fahasen
+author: fhasen-msft
+manager: Justin.Giammona
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
-ms.subservice: multi-tenant
+ms.subservice: multi-geo-capabilities
 ms.collection:
 - SPO_Content
 - Strat_SP_gtc
@@ -25,7 +25,7 @@ Here's what your users see in a OneDrive Multi-Geo configuration:
 
 ## Exchange Online mailbox
 
-A user's Exchange Online mailbox is provisioned to their preferred data location, and is automatically relocated if their PDL changes. Users can use Outlook and Outlook on the web normally with no change in user experience in a Multi-Geo environment.
+A user's Exchange Online mailbox is provisioned to their _Preferred Data Location (PDL)_, and is automatically relocated if their _PDL_ changes. Users can use Outlook and Outlook on the web normally with no change in user experience in a _Multi-Geo_ environment. All active and inactive mailboxes placed on litigation hold will continue to adhere to the configured _PDL_ for the duration of the litigation hold period. For more information, see [Place a mailbox on Litigation Hold](/microsoft-365/admin/misc/create-litigation-hold-mac) and [Delete an inactive mailbox](/purview/delete-an-inactive-mailbox).
 
 ## Hub sites
 
@@ -120,6 +120,6 @@ When users interact directly or indirectly with content they have access to, the
 - User-owned and Shared documents  
 - Tenant owned content like company-wide SharePoint site and company published files.  
 
-The seamless synchronization of the file content and associated updates of the content and access modifications allows users to collaborate on the latest version across geographies. It ensures that search and other M365 experiences like My Content in M365, Recently Opened or Shared in various applications, always reflect the latest version of the file and associated user activities. Access to the file is guarded by the source file content access controls. 
+The seamless synchronization of the file content and associated updates of the content and access modifications allows users to collaborate on the latest version across geographies. It ensures that search and other Microsoft 365 experiences like My Content in M365, Recently Opened or Shared in various applications, always reflect the latest version of the file and associated user activities. Access to the file is guarded by the source file content access controls. 
 
 An individual user’s personal interactions which include pinning documents, marking as favorites, following sites and Copilot prompts and responses with an item are not shared with others and remain private. Both admins and users can configure their search capabilities by using the article [Configure Search for OneDrive Multi-Geo](configure-search-for-multi-geo.md).

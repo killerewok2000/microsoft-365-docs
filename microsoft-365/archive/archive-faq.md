@@ -64,19 +64,17 @@ You won't be charged for archive storage as long as your combined storage (stand
 
 In eligible EDU tenants, the pooled storage quota is applied. For more information, see [Education offering for Microsoft 365 Archive](archive-education-offering.md#pooled-storage-eligibility).
 
-#### Does archived content get returned in Copilot for Microsoft 365 queries?
+#### Does archived content get returned in Microsoft 365 Copilot queries?
 
-No, archived content isn't used by Copilot for Microsoft 365. 
+No, archived content isn't used by Microsoft 365 Copilot. 
 
 #### Can you delete an archived site, should you no longer need it?  
 
-You can directly delete an archived site without the need to reactivate, if it's a **group connected site**.
+You can directly delete an archived site without the need to reactivate.
 
-- In SharePoint admin center: Delete the site, and the associated Microsoft 365 Group is automatically deleted as well.
-- 
-- Using PowerShell and Graph API: Delete the Microsoft 365 Group, and the associated sites are automatically deleted as well. Deleting only the site (but not the group) isn't possible.
+- In SharePoint admin center: Delete the site, and any associated Microsoft 365 Group is automatically deleted as well.
 
-Deleting **sites that are not connected to a group** (for example, STS#0) from an archived state isn't possible. These sites require reactivation to be deleted.
+- Using PowerShell and Graph API: If the site is connected to a Microsoft 365 Group then you should delete the Microsoft 365 Group, and the associated sites are automatically deleted as well. Deleting only the site (but not the group) isn't possible. If the site is not connected to a Microsoft 365 Group, then you can delete the site directly. 
 
 #### Can archived content in legal hold be deleted?
 

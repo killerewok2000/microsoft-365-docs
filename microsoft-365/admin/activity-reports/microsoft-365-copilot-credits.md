@@ -17,7 +17,8 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 - operations-pod
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- GAUpdates
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn about the Copilot credits consumption report in the Microsoft 365 admin center and how it helps to manage costs associated with Microsoft 365 Copilot Chat."
 ms.date: 09/01/2025
@@ -147,6 +148,10 @@ Yes. You can set up the pay-as-you-go billing policy in the Microsoft 365 admin 
 
 **Last activity detected** is the date and timestamp of the most recent prompt or user activity that generated the credits consumed.
 
+### How can I test that pay-as-you-go is correctly configured and working properly?
+
+Have a user who qualifies for pay-as-you-go use one of the following three agents: "Learning Coach", "Writing Coach", or "Career Coach." Have them submit a simple prompt such as "What can you do?" This prompt should consume about 12 credits and be visible in the Copilot Credits Report.
+
 ### How do I find a Billing policy name from the Billing policy ID?
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, go to the **Copilot > Billing & usage** page.
@@ -157,6 +162,8 @@ Yes. You can set up the pay-as-you-go billing policy in the Microsoft 365 admin 
 
 By default, the Billing Policy ID in the Copilot credits report is anonymized, similar to the username and display name. Global administrators can modify settings to either reveal or conceal the Billing Policy ID.
 
+[!INCLUDE [global-administrator-note](../../includes/global-administrator-note.md)]
+
 1. In the Microsoft 365 admin center, go to the **Settings** > **Org Settings** page.
 2. On the **Services** tab, select **Reports**.
 3. To view the **Billing policy ID**, in the **Reports** panel, clear the **Display concealed user, group, and site names in all reports** checkbox.
@@ -164,4 +171,4 @@ By default, the Billing Policy ID in the Copilot credits report is anonymized, s
 5. To conceal the Billing policy ID, select the checkbox again, and save your changes.
 
 > [!NOTE]
-> Changes to this concealed data setting affects the username, display name, and Billing Policy ID.
+> Changes to this concealed data setting affect the username, display name, and Billing Policy ID.

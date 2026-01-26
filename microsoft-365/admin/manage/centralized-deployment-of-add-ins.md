@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: kwekua
 author: kwekuako
-manager: dansimp
+manager: scotv
 ms.date: 08/26/2025
 audience: Admin
 ms.topic: install-set-up-deploy
@@ -68,7 +68,7 @@ Centralized deployment doesn't support the following:
 - An on-premises directory service
 - Add-in deployment to an Exchange On-Prem Mailbox
 - Add-in deployment to SharePoint
-- Teams apps
+- [Apps for Microsoft 365](apps-for-microsoft-365-overview.md) that include more than an add-in (For example, an app for Microsoft 365 that includes a Teams app.)
 - Deployment of Component Object Model (COM) or Visual Studio Tools for Office (VSTO) add-ins.
 - Deployments of Microsoft 365 that do not include Exchange Online such as SKUs: Microsoft 365 Apps for Business and Microsoft 365 Apps for Enterprise.
 
@@ -111,11 +111,13 @@ Use the classic Exchange admin center (EAC) to assign permissions to users. The 
 > [!NOTE]
 > These roles are selected by default.
 
+[!INCLUDE [global-administrator-note](../../includes/global-administrator-note.md)]
+
 For more information, see [Manage role groups in Exchange Online](/exchange/permissions-exo/role-groups). For a detailed description of the different roles, see [Role assignment policies in Exchange Online](/exchange/permissions-exo/role-assignment-policies).
 
 ### Admin requirements
 
-In order to deploy an add-in via centralized deployment, you need to be either a Global admin or an Exchange admin in the organization.
+In order to deploy an add-in via centralized deployment, you need to be an Exchange admin in the organization.
 
 > [!NOTE]
 > An Exchange admin can deploy an add-in if the **Application Administrator** role is added or if the **App Registrations** property is set to true in Microsoft Entra admin center as shown in the following image:
@@ -149,6 +151,8 @@ Using the Centralized Deployment Compatibility Checker, you can verify whether t
 
    > [!NOTE]
    > Depending on the number of users in your tenant, the checker could complete in minutes or hours.
+
+[!INCLUDE [global-administrator-note](../../includes/global-administrator-note.md)]
 
 When the tool finishes running, it produces an output file in comma-separated (.csv) format. The file is saved to **the current working directory** by default. The output file contains the following information:
 
